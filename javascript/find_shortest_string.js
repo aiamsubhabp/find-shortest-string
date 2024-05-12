@@ -1,6 +1,23 @@
 function findShortestString(arr) {
   // type your code here
+  let shortestStr = arr[0]
+  // let shortestStr = shortArr
+  // console.log(shortArr)
+  // console.log(shortestStr)
+
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i].length < shortestStr.length) {
+      shortestStr = arr[i]
+    }
+  }
+  return shortestStr
 }
+
+let answer = findShortestString(['paul', 'pat', 'Plum', 'pin', 'jk']);
+
+console.log('answer:', answer)
+
+
 
 if (require.main === module) {
   // add your own tests in here
